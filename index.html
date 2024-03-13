@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/styles/output.css">
+
+    <title>Dev Burger - Best FastFood</title>
+</head>
+<body>
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img 
+                src="./assets/img/hamb-1.png"
+                alt="Logo Dev Burger"
+                class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200" 
+            />
+            <h1 class="text-3xl mt-4 mb-2 font-bold text-white">
+                Dev Burger
+            </h1>
+            <span class="text-white font-medium">Contrada San Marino 10, Messina - ME</span>
+            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span class="text-white font-medium">Lun à Dom - 18:00 fino 22:00</span>
+            </div>
+        </div>
+    </header>
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+        Conosci il nostro Menú 
+    </h2>
+
+    <div id="menu">
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+            <div class="flex gap-2">
+                <img 
+                    src="assets/img/hamb-1.png" 
+                    alt="hamburger Smash"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                >
+                <div>
+                    <p class="font-bold">hamburger Smash</p>
+                    <p class="text-sm">Si tratta di un sandwich composto da un filetto di bovino, inserito tra due fette di pane morbido. Accompagnato da una salsa a base di maionese e insalata croccante.</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">€ 5.50</p>
+                        <button 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="hamburger Smash"
+                            data-price="5.50"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img 
+                    src="assets/img/hamb-2.png" 
+                    alt="hamburger Double"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                >
+                <div>
+                    <p class="font-bold">hamburger Double</p>
+                    <p class="text-sm">Si tratta di un sandwich composto da un filetto di bovino, inserito tra due fette di pane morbido. Accompagnato da una salsa a base di maionese e insalata croccante.</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">€ 10.50</p>
+                        <button 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="hamburger Double"
+                            data-price="10.50"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img 
+                    src="assets/img/hamb-3.png" 
+                    alt="hamburger Salad"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                >
+                <div>
+                    <p class="font-bold">hamburger Salad</p>
+                    <p class="text-sm">Si tratta di un sandwich composto da un filetto di bovino, inserito tra due fette di pane morbido. Accompagnato da una salsa a base di maionese e insalata croccante.</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">€ 9.20</p>
+                        <button 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="hamburger Salad"
+                            data-price="9.20"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img 
+                    src="assets/img/hamb-4.png" 
+                    alt="hamburger Special"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                >
+                <div>
+                    <p class="font-bold">hamburger Special</p>
+                    <p class="text-sm">Si tratta di un sandwich composto da un filetto di bovino, inserito tra due fette di pane morbido. Accompagnato da una salsa a base di maionese e insalata croccante.</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">€ 19.30</p>
+                        <button 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="hamburger Special"
+                            data-price="19.30"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="mx-auto max-w-7xl px-2 my-2">
+            <h2 class="font-bold text-3xl">Bevande</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+            <div class="flex gap-2 w-full">
+                <img 
+                    src="assets/img/refri-1.png" 
+                    alt="Coca Cola"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                >
+                <div class="w-full">
+                    <p class="font-bold">Coca Cola</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">€ 2.50</p>
+                        <button 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="Coca Cola"
+                            data-price="2.50"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex gap-2 w-full">
+                <img 
+                    src="assets/img/refri-2.png" 
+                    alt="Guaranà"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                >
+                <div class="w-full">
+                    <p class="font-bold">Guaranà</p>
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">€ 1.80</p>
+                        <button 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="Guaranà"
+                            data-price="1.80"
+                        >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div 
+        class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+        id="cart-modal"
+    >
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[700px]">
+            <h2 class="text-center font-bold text-2xl mb-2">Carrello</h2>
+
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+            <p class="font-bold"><span id="cart-total">0.00</span></p>
+            <p class="font-bold mt-4">Indirizzo Consegna:</p>
+            <input 
+                type="text"
+                placeholder="Il tuo indirizzo completo"
+                id="address"
+                class="w-full border-2 p-1 rounded my-1"    
+            >
+            <p class="text-red-500 hidden" id="address-warn">compila il tuo indirizzo completo</p>
+            <div class="flex items-center justify-between mt-5 w-full">
+                <button id="close-modal-btn">Chiudi</button>
+                <button id="checkout-btn" class="bg-green-500 text-white px-4 py-1 rounded">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="w-full bg-red-500 py-2 fixed bottom-0 z-40 flex items-center justify-center">
+        <button 
+            class="flex items-center gap-2 text-white font-bold"
+            id="cart-btn"
+        >
+            (<span id="cart-count">0</span>)
+            Vedi Carrello
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
